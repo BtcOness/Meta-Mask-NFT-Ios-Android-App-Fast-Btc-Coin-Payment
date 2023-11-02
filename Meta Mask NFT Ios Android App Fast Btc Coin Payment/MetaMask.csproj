@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>nullable</WarningsAsErrors>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Authors>Michiel Post</Authors>
+    <Version>1.6.1</Version>
+    <Product>MetaMask.Blazor</Product>
+    <PackageProjectUrl>https://github.com/michielpost/MetaMask.Blazor</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/michielpost/MetaMask.Blazor</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
+    <PackageTags>metamask ethereum blockchain web3 blazor</PackageTags>
+    <Description>MetaMask Blazor Extension</Description>
+  </PropertyGroup>
+
+  
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.1" />
+    <PackageReference Include="Nethereum.ABI" Version="4.1.1" />
+    <PackageReference Include="Nethereum.RPC" Version="4.1.1" />
+  </ItemGroup>
+
+</Project>
